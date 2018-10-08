@@ -3,7 +3,8 @@
     <div class="row">
       <div class="col-12 col-sm-12 col-md-7 col-lg-7"
            data-aos="zoom-out-right"
-           data-aos-duration="1000">
+           data-aos-duration="1000"
+           data-aos-once="true">
         <h1 class="mb-5 main-title">
           The next generation of<br>
           mobile communication.
@@ -11,8 +12,8 @@
         <p class="mb-4 title-desc">
           Chat with friends, create group chats and track your friends<br> locations. All of this and more - <b>and it’s fully encrypted</b>!
         </p>
-        <form>
-          <div class="form-group col-12 col-sm-10 col-md-10 col-lg-8 p-0">
+        <form class="col-12 col-sm-12 col-md-8 col-lg-8 p-0">
+          <div class="form-group  p-0">
             <input type="email" class="form-control email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sign up to our newsletter!">
             <button class="btn mail-btn"></button>
             <small id="emailHelp" class="form-text text-muted d-none">We'll never share your email with anyone else.</small>
@@ -22,12 +23,14 @@
       <div class="d-none d-sm-none d-md-block col-md-5 col-lg-5 col-xl-5 top-mobile">
         <div class="mobile-1"
              data-aos="fade-down"
-             data-aos-duration="1000">
+             data-aos-duration="1000"
+             data-aos-once="true">
           <img src="../../assets/mobile1.png" class="img-fluid" alt="">
         </div>
         <div class="mobile-2"
              data-aos="fade-up"
-             data-aos-duration="1000">
+             data-aos-duration="1000"
+             data-aos-once="true">
           <img src="../../assets/mobile2.png" class="img-fluid" alt="">
         </div>
       </div>
@@ -172,7 +175,9 @@
 
   /*Small devices (landscape phones, 576px and up)*/
   @media (min-width: 576px) and (max-width: 767.98px) {
-
+    .first-section-container .main-title{
+      margin-top: 20px;
+    }
   }
 
   /*Medium devices (tablets, 768px and up)*/

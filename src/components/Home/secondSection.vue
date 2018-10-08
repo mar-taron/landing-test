@@ -1,12 +1,17 @@
 <template>
-    <div class="container-fluid second-section-container">
+    <div class="container-fluid second-section-container" id="second-section">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12"
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-once="true"
+               data-anchor="#second-section"
+          >
             <div class="row d-flex align-items-center">
               <div class="col-12 col-sm-4 col-md-4 col-lg-4 py-4 py-sm-5">
                 <div class="d-flex justify-content-around">
-                  <a class="partners-items text-center" href="javascript:void(0)">
+                  <a class="partners-items" href="javascript:void(0)">
                     <h4 class="title-2">PARTNERS AND AFFILIATES</h4>
                   </a>
                 </div>

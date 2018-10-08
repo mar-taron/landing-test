@@ -19,11 +19,15 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
+  created () {
+    AOS.init({
+      offset: 50,
+      mirror: true,
+    })
+    setTimeout(function() { AOS.refresh(); }, 500);
+  },
   el: '#app',
   router,
   components: { App },
-  template: '<App/>',
-  created () {
-    AOS.init()
-  }
+  template: '<App/>'
 })

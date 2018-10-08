@@ -10,10 +10,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto text-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link underline" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Application</a>
+            <a class="nav-link underline" href="#">Application</a>
           </li>
         </ul>
       </div>
@@ -43,5 +43,28 @@
   .navbar-dark .navbar-toggler{
     border: none;
     color: #ffffff;
+  }
+  .underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+  .underline:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 0;
+    bottom: 4px;
+    background: #ffffff;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .underline:hover:after, .underline:focus:after, .underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
   }
 </style>

@@ -4,7 +4,10 @@
       <div class="row">
         <div class="col-12 third-section-container">
           <div class="row d-flex align-items-center">
-            <div class="col-12 col-sm-8 col-md-8 col-lg-8">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8"
+                 data-aos="zoom-out-right"
+                 data-aos-duration="1000"
+                 data-aos-once="true">
               <h2 class="mb-3 dark-text">
                 AgoraMesh is a fully secure anonymous <br>
                 communication platform. <span class="blue-text">Fast, secure <br>
@@ -16,7 +19,10 @@
                 other messaging app.
               </p>
             </div>
-            <div class="col-12 col-sm-4 col-md-4 col-lg-4 mt-5 mt-sm-4 d-flex align-items-center">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 mt-5 mt-sm-4 d-flex align-items-center"
+                 data-aos="zoom-out-left"
+                 data-aos-duration="1000"
+                 data-aos-once="true">
               <div class="third-section-icon">
                 <img src="../../assets/element-1.png" class="img-fluid" alt="">
               </div>
@@ -91,7 +97,9 @@
 
     /*Small devices (landscape phones, 576px and up)*/
     @media (min-width: 576px) and (max-width: 767.98px) {
-
+      .third-section-container{
+        margin: 100px 0;
+      }
     }
 
     /*Medium devices (tablets, 768px and up)*/

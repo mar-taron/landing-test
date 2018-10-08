@@ -3,16 +3,28 @@
     <div class="container">
       <div class="row">
         <div class="col-12 main-title">
-            <h2 class="dark-text font-weight-normal">
+            <h2 class="dark-text font-weight-normal"
+                data-aos="slide-up"
+                data-aos-duration="1000"
+                data-aos-once="true">
               So <span class="blue-text font-weight-500">how</span> do we plan on doing this?
             </h2>
         </div>
         <div class="col-12 sixth-section-content">
             <div class="row d-flex align-items-center">
-                <div class="col-3">
+                <div class="d-flex align-items-center col-8 d-block d-sm-block d-md-none mobile-icon">
+                  <img class="img-fluid" src="../../assets/icon-img1.png" alt="Icon">
+                </div>
+                <div class="d-none d-sm-none d-md-block col-3"
+                     data-aos="zoom-out-right"
+                     data-aos-duration="1200"
+                     data-aos-once="true">
                   <img class="img-fluid icon-img-1" src="../../assets/icon-img1.png" alt="Icon">
                 </div>
-                <div class="col-9">
+                <div class="col-12 col-sm-12 col-md-9"
+                     data-aos="fade-left"
+                     data-aos-duration="1000"
+                     data-aos-once="true">
                     <h3 class="dark-text font-weight-normal mb-4">
                       We are building the <span class="blue-text font-weight-500">AgoraMeshNetwork</span>.
                     </h3>
@@ -33,7 +45,13 @@
         </div>
         <div class="col-12 sixth-section-content">
             <div class="row d-flex align-items-center">
-                <div class="col-9">
+                <div class="col-12 col-sm-12 col-md-9"
+                     data-aos="fade-left"
+                     data-aos-duration="1000"
+                     data-aos-once="true">
+                    <div class="d-flex align-items-center col-8 d-block d-sm-block d-md-none mobile-icon">
+                      <img class="img-fluid" src="../../assets/icon-img2.png" alt="Icon">
+                    </div>
                     <h5 class="dark-text font-weight-normal mb-4">
                       We are building a decentralized solution - <br><span class="blue-text font-weight-500">AgoraMeshBlockchain</span>.
                     </h5>
@@ -47,7 +65,10 @@
                       This model allows for large nodes and lite nodes to sell excess bandwidth to the network that they are not currently using. In turn, AGM tokens represent an asset or right to use part of the network and create an incentivization structure that encourages adoption.
                     </p>
                   </div>
-                  <div class="col-3">
+                  <div class="col-3 d-none d-sm-none d-md-block"
+                       data-aos="zoom-out-left"
+                       data-aos-duration="1200"
+                       data-aos-once="true">
                     <img class="img-fluid icon-img-2" src="../../assets/icon-img2.png" alt="Icon">
                   </div>
               </div>
@@ -98,4 +119,57 @@
     margin: 230px 0 0 0;
   }
 
+  /*Media queries*/
+  /*Extra small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575.98px) {
+    .sixth-section-content h3{
+      word-wrap: break-word;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .sixth-section-content h5{
+      word-wrap: break-word;
+      margin: 20px 0 0 0;
+      text-align: center;
+    }
+
+    .mobile-icon{
+      margin: 80px auto 0 auto;
+    }
+  }
+
+  /*Small devices (landscape phones, 576px and up)*/
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .sixth-section-content h3{
+      word-wrap: break-word;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .sixth-section-content h5{
+      word-wrap: break-word;
+      margin: 40px 0 0 0;
+      text-align: center;
+    }
+
+    .mobile-icon{
+      margin: 60px auto 0 auto;
+    }
+  }
+
+  /*Medium devices (tablets, 768px and up)*/
+  @media (min-width: 768px) and (max-width: 991.98px) {
+
+  }
+
+  /*Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+
+  }
+
+  /*Extra large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) {
+
+  }
 </style>

@@ -39,4 +39,36 @@
     fifth-section-container p{
       font-size: 18px;
     }
+
+    /*Media queries*/
+    /*Extra small devices (portrait phones, less than 576px)*/
+    @media (max-width: 575.98px) {
+      .fifth-section-container{
+        padding: 100px 0;
+      }
+    }
+
+    /*Small devices (landscape phones, 576px and up)*/
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .fifth-section-container{
+        padding: 100px 0;
+      }
+    }
+
+    /*Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .second-screen{
+        margin-right: 0;
+      }
+    }
+
+    /*Large devices (desktops, 992px and up)*/
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    }
+
+    /*Extra large devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {
+
+    }
 </style>

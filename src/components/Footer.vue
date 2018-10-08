@@ -2,12 +2,12 @@
     <div class="container-fluid footer">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-4 text-left">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-left text-sm-left text-md-left">
             <h3 class="font-weight-bold mb-3">AgoraMesh</h3>
             <p>The next generaion mobile<br>communication.</p>
             <small>&copy; agoramesh. all rights reserved.</small>
           </div>
-          <div class="col-4 text-center">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-right text-sm-right text-md-center">
             <div class="d-inline px-2">
               <a href="javascript:void(0)">
                 <img class="img-fluid twitter-logo" src="../assets/twitter.png" alt="Icons">
@@ -29,7 +29,7 @@
               </a>
             </div>
           </div>
-          <div class="col-4 text-right">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center text-sm-center text-md-right pt-4 pt-sm-4 pt-md-0">
             <a href="javascript:void(0)" class="footer-download font-weight-bold">Download Whitepaper</a>
           </div>
         </div>
