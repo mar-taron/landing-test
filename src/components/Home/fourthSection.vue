@@ -34,7 +34,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 d-flex" id="fourth-item-second">
+                  <div class="col-12 d-flex fourth-section-items" id="fourth-item-second">
                       <div class="d-none d-sm-none d-md-flex d-lg-flex col-12 col-sm-12 col-md-5 col-lg-5 align-items-end flex-column second-screen"
                            data-aos="fade-left"
                            data-aos-duration="1000"
@@ -63,7 +63,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="col-12 d-flex " id="fourth-item-third">
+                  <div class="col-12 d-flex fourth-section-items" id="fourth-item-third">
                       <div class="d-none d-sm-none d-md-flex d-lg-flex col-12 col-sm-12 col-md-5 col-lg-5 align-items-start flex-column third-screen"
                            data-aos="fade-right"
                            data-aos-duration="1000"
@@ -205,6 +205,9 @@
     .fourth-section-container .mobile-apps {
       padding: 60px 0 60px 0;
     }
+    .fourth-section-items{
+      margin-bottom: 80px;
+    }
   }
 
   /*Small devices (landscape phones, 576px and up)*/
@@ -213,8 +216,8 @@
       padding: 60px 0 100px 0;
     }
 
-    .second-screen-body .mobile-right{
-      margin-top: 70px;
+    .fourth-section-items{
+      margin-bottom: 80px;
     }
   }
 

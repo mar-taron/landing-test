@@ -13,9 +13,9 @@
           Chat with friends, create group chats and track your friends<br> locations. All of this and more - <b>and it’s fully encrypted</b>!
         </p>
         <form class="col-12 col-sm-12 col-md-8 col-lg-8 p-0">
-          <div class="form-group  p-0">
-            <input type="email" class="form-control email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sign up to our newsletter!">
-            <button class="btn mail-btn"></button>
+          <div class="form-group " >
+            <input type="email"  v-bind:class="{ active : active}" class="form-control email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sign up to our newsletter!">
+            <button class="btn mail-btn" v-on:click="activeInput"></button>
             <small id="emailHelp" class="form-text text-muted d-none">We'll never share your email with anyone else.</small>
           </div>
         </form>
@@ -34,25 +34,9 @@
           <img src="../../assets/mobile2.png" class="img-fluid" alt="">
         </div>
       </div>
-      <div class="col-12 mb-4">
-        <div class="d-inline">
-          <a href="javascript:void(0)" class="social-icon  ic1">
-          </a>
-        </div>
-        <div class="d-inline">
-          <a href="javascript:void(0)" class="social-icon  ic2">
-          </a>
-        </div>
-        <div class="d-inline">
-          <a href="javascript:void(0)" class="social-icon  ic3">
-          </a>
-        </div>
-        <div class="d-inline">
-          <a href="javascript:void(0)" class="social-icon  ic4">
-          </a>
-        </div>
-        <div class="d-inline">
-          <a href="javascript:void(0)" class="social-icon  ic5">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-4">
+        <div class="d-inline-block social" v-bind:class="{'blink': blink}" v-bind:key="n" v-for="n in icons">
+          <a href="javascript:void(0)" v-bind:class="'social-icon ic' + n">
           </a>
         </div>
       </div>
@@ -62,11 +46,50 @@
 
 <script>
     export default {
-        name: "firstSection"
+        name: "firstSection",
+        data(){
+          return {
+            active:false,
+            icons: 5, 
+            blink: true
+          }
+        },
+        methods:{
+          activeInput(e){
+            e.preventDefault();
+            this.active = !this.active;
+          }
+        },
+        mounted: function () {
+          setTimeout(()=>{
+            this.blink = false
+          }, 2000)
+          
+        }
+
     }
 </script>
 
 <style scoped>
+  .social{
+    display: inline-block !important;
+    background: #4397b2;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+  }
+
+ .social:hover {
+    transition: transform 0.4s ease-out;
+    transform: rotateZ(360deg);
+    background: #3e8ba4;
+    border-radius: 0;
+    // padding: 3px;
+    // width: 40px;
+    // height: 40px;
+  }
+
   .first-section-container .form-group{
     position: relative;
   }
@@ -74,25 +97,40 @@
   .first-section-container .form-group input{
     height: 50px;
     border-radius: 50px;
-    padding: 5px 50px 5px 25px;
+    padding: 5px 25px 5px 25px;
     border: none;
+  }
+
+  .first-section-container .form-group input.active{
+    width: 100%
+  }
+
+   .first-section-container .form-group input.active + button{
+    right: 0;
   }
 
   .first-section-container .email{
     font-size: 14px;
     font-family: 'Open Sans Light';
+    border-radius: 36px;
+    position: absolute;
+    width: 45px;
+    height: 64px;
+    transition: all 0.5s cubic-bezier(.87, -.41, .19, 1.44);
+
   }
 
   .first-section-container .mail-btn{
     position: absolute;
     top: 0;
-    right: 0;
+    right: calc(100% - 50px);
     width: 35px;
     height: 35px;
     margin: 7.5px;
     background: #56b8d7;
     border: none;
     border-radius: 30px;
+    transition: all 0.5s cubic-bezier(.87, -.41, .19, 1.44);
   }
 
   .mail-btn:after{
@@ -163,6 +201,22 @@
   .title-desc{
     font-size: 18px;
     font-family: 'Open Sans Light'
+  }
+
+
+  @keyframes blink {  
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  .blink.ic1 {
+    animation: blink 2000ms steps(5, start) infinite;
+    -webkit-animation: blink 1s steps(5, start) infinite;
+  }
+
+  .first-section-container form{
+    height: 50px;
+    margin-bottom: 30px;
   }
 
   /*Media queries*/
