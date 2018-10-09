@@ -97,7 +97,7 @@
   .first-section-container .form-group input{
     height: 50px;
     border-radius: 50px;
-    padding: 5px 25px 5px 25px;
+    padding: 5px 25px 5px 24px;
     border: none;
   }
 
