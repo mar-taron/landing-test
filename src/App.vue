@@ -16,6 +16,7 @@ export default {
     font-size: 16px;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
   }
   b, strong{
     font-weight: bold;
